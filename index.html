@@ -1,0 +1,22 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIVNf7S6IhGPYXRNM7X1TwxInNlmyN6Lc&libraries=places"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+<script>
+  // This script is to ensure that the Google Maps API is loaded before React tries to use it.
+  window.addEventListener('load', () => {
+    const script = document.createElement('script');
+    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDIVNf7S6IhGPYXRNM7X1TwxInNlmyN6Lc&libraries=places';
+    script.async = true;
+    document.body.appendChild(script);
+  });
+</script>

@@ -1,0 +1,14 @@
+.app {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+}
