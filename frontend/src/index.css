@@ -66,3 +66,18 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.weather-card {
+  background: #f5faff;
+  padding: 1rem;
+  border-radius: 12px;
+  max-width: 400px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  font-family: sans-serif;
+}
+.weather-card p {
+  margin: 4px 0;
+}
+.weather-card img {
+  width: 64px;
+  height: 64px;
+}
