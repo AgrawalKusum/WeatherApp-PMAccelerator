@@ -23,4 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 node_modules/
-maps_api=AIzaSyDIVNf7S6IhGPYXRNM7X1TwxInNlmyN6Lc
+
+.env
+
+
+
