@@ -24,7 +24,7 @@ app.get('/weather', async (req, res) => {
         key: apiKey,
         q: `${lat},${lng}`,
         dt: date,
-        days: 1,
+        days: 10,
         aqi: 'no',
         alerts: 'no',
       }
@@ -33,8 +33,9 @@ app.get('/weather', async (req, res) => {
     const data = response.data;
 
     // Example: Find forecast for the requested date
-    const targetDate = new Date(date).setHours(0, 0, 0, 0);
-    const dailyForecast = response.data.forecast.forecastday[0];
+    const forecastList = data.forecast.forecastday;
+    const dailyForecast = forecastList.find(day=>day.date===date);
+    
 
     res.json({
   location: response.data.location,
